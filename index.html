@@ -3,9 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS STYLE -->
+   <link rel="stylesheet" href="style.css">
+  <!-- AXIOS -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.js' integrity='sha512-+dJa1RvuE8/HFftifMtr7hqixdEkb/DizfXUZAA0pyZeVdNnyZyKy9RnIWi0JSWUznbCNbaQNn0E6nbtrdL+9g==' crossorigin='anonymous'></script>
+
   <title>Email List</title>
 </head>
 <body>
-  
+  <div class="container lista">
+    <h1>Lista 10 EMAIL generate randomicamente</h1>
+    <ul></ul>
+  </div>
+
+  <div class="container lista bonus">
+    <h1>Lista 10 EMAIL CON LOADER</h1>
+    <ul id="ulBonus">Loading...</ul>
+    <button id="newMails">Genera nuove mail</button>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>
