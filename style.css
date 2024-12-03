@@ -22,6 +22,7 @@ ul li{
   text-align: center;
 }
 .container:first-child {
+  padding: 20px;
   width:500px;
   height: 500px;
   background-image: linear-gradient(to bottom right, red, yellow);
@@ -37,6 +38,7 @@ ul li{
 .bonus {
   position: relative;
   margin-left: 10px;
+  padding: 20px;
   width:500px;
   height: 500px;
   background-image: linear-gradient(to top right, yellow, red);
@@ -51,7 +53,12 @@ ul li{
 
 button {
   display: block;
+  padding: 5px;
   margin: 5px auto;
+  border-radius: 25% 5%;
+  background-color: brown;
+  color: white;
+  box-shadow: 5px 3px black;
 }
 
 #ulBonus {
@@ -63,7 +70,7 @@ button {
   top: 5%;
   left: 38%;
   transform: translate(-50%,-50%);
-  border: 16px solid beige; /* Light grey */
+  border: 16px solid rgb(24, 24, 7); /* Light grey */
   border-top: 16px solid brown; /* Blue */
   border-radius: 50%;
   width: 120px;
