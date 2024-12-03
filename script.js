@@ -23,6 +23,18 @@ for(let i = 0; i < 10;i++){
     })
 }
   
+generate.addEventListener('click', () => {
+  document.querySelector('ul').innerHTML = ''
+  for(let i = 0; i < 10;i++){
+    axios.get(endPoint)
+      .then(response => {
+        if(response.data.success){
+          email = `<li>${response.data.response}</li>`
+          printList(email)
+        }
+      })
+  }
+})
 
 
 //BONUS
