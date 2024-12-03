@@ -1,4 +1,50 @@
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Parkinsans", sans-serif;
+}
+
 body {
   display: flex;
-  justify-content: space-between;
+  margin: 100px;
+  justify-content: center;
+  background-color:brown
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+ul li{
+  list-style: none;
+  text-align: center;
+}
+.container:first-child {
+  width:500px;
+  height: 500px;
+  background-image: linear-gradient(to bottom right, red, yellow);
+  border: 1px solid black;
+  border-radius: 5% 25%;
+  box-shadow: 5px 10px 20px;
+}
+
+.bonus {
+  margin-left: 10px;
+  width:500px;
+  height: 500px;
+  background-image: linear-gradient(to top right, yellow, red);
+  border: 1px solid black;
+  border-radius: 25% 5%;
+  box-shadow: 5px 10px 20px;
+}
+
+.bonus h1 {
+  text-align: right;
+}
+
+button {
+  display: block;
+  margin: 5px auto;
 }
