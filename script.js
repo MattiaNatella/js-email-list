@@ -50,14 +50,17 @@ list
 
 function getRandomEmails(quante){
   let email = ''
+  let contatoreRisposte = 0
   for(let i = 0; i < quante; i++){
     axios.get(endPoint)
       .then(response => {
+        contatoreRisposte++
         if(response.data.success){
            email += `<li>${response.data.response}</li>`
         }
-        document.getElementById('ulBonus').innerHTML = ''
-        document.getElementById('ulBonus').innerHTML = email
+        if(contatoreRisposte === quante - 1){
+          document.getElementById('ulBonus').innerHTML = email
+        }
       })
   }
 }
