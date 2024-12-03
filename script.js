@@ -19,6 +19,7 @@ for(let i = 0; i < 10;i++){
         email = `<li>${response.data.response}</li>`
         printList(email)
       }
+     
     })
 }
  
@@ -59,6 +60,7 @@ function getRandomEmails(quante){
            email += `<li>${response.data.response}</li>`
         }
         if(contatoreRisposte === quante - 1){
+          document.querySelector('.loader').classList.add('d-none')
           document.getElementById('ulBonus').innerHTML = email
         }
       })
