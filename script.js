@@ -38,7 +38,9 @@ generate.addEventListener('click', () => {
 
 
 //BONUS
-// printListBonus(getRandomEmails(10))
+
+
+getRandomEmails(10)
 
 
 //FUNCTIONS
@@ -50,10 +52,10 @@ function getRandomEmails(quante){
         if(response.data.success){
            email += `<li>${response.data.response}</li>`
         }
+        document.getElementById('ulBonus').innerHTML = ''
+        document.getElementById('ulBonus').innerHTML = email
       })
   }
-  console.log(response.data.success)
-  return email
 }
 
 
@@ -62,5 +64,5 @@ function printList(list) {
 }
 
 function printListBonus(list) {
-  document.getElementById('ulBonus').innerHTML = list
+list
 }
